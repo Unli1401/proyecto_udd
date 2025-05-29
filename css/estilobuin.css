@@ -119,6 +119,7 @@ h1 {
 
 }
 
+
 .back {
     margin-left: 50px;
     cursor: pointer;
@@ -141,11 +142,42 @@ h1 {
     background-color: rgba(75, 85, 99);
     color: white;
     border-radius: .375rem;
-    font-weight: 500; 
+    font-weight: 500;
     font-size: .7rem;
     text-align: rigth;
     padding-left: 5px;
     padding-right: 5px;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
     padding-top: 1px;
+}
+
+.ir {
+    margin-left: 62%;
+    cursor: pointer;
+    background-color: rgba(75, 85, 99);
+    color: white;
+    border-radius: .375rem;
+    font-weight: 500;
+    font-size: .7rem;
+    text-align: rigth;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+
+}
+.ir2 {
+    margin-left: 30%;
+    cursor: pointer;
+    background-color: rgba(75, 85, 99);
+    color: white;
+    border-radius: .375rem;
+    font-weight: 500;
+    font-size: .7rem;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+
 }

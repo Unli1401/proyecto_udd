@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../imagenes/imagen.jpg'); /* Reemplaza por ruta relativa válida */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formcontenedor {
+    padding: 50px 20px;
+    background-color: #ededed;
+    margin: 40px auto;
+    max-width: 600px;
+    border: 2px solid #0e0d0d;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea.msg {
+    font-size: 18px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0e0d0d;
+    border-radius: 5px;
+}
+
+textarea.msg {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.button {
+    background-color: #48e;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 80, 199);
+}
+
+/* Responsivo para móviles */
+@media only screen and (max-width: 480px) {
+    .formcontenedor {
+        padding: 20px;
+        margin: 15px;
+        border-width: 3px;
+    }
+
+    .button {
+        background-color: rgb(134, 171, 228);
+        color: #000;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 720px) {
+    .formcontenedor {
+        padding: 25px;
+        margin: 20px;
+        border-width: 3px;
+    }
+
+    .button {
+        background-color: rgb(134, 171, 228);
+        color: #000;
+    }
+}
