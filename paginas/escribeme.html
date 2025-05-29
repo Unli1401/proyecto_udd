@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/escribeme.css" rel="stylesheet" />
+    <title>Escríbeme</title>
+</head>
+<body>
+
+<form action="../paginas/enviocontacto.php" class="formulario" method="post">
+    <h1>Escríbeme, consejo, opinión o reclamo</h1>
+
+    <div class="formcontenedor">
+        <div class="input">
+            <input name="nombre" placeholder="Tu Nombre" required type="text" />
+        </div>
+
+        <div class="input">
+            <input name="mail" placeholder="Tu Email" required type="email" />
+        </div>
+
+        <div class="input">
+            <textarea class="msg" name="msg" placeholder="Tu Mensaje" required></textarea>
+        </div>
+
+        <div class="contenedor-boton">
+            <input class="button" type="submit" value="Enviar" />
+        </div>
+    </div>
+</form>
+
+<script>
+    function getUrlParameter(name) {
+        const url = window.location.href;
+        const regex = new RegExp('[?&]' + name + '=([^&]*)');
+        const results = regex.exec(url);
+        return results ? decodeURIComponent(results[1]) : null;
+    }
+
+    const status = getUrlParameter('status');
+    if (status) {
+        const message = status === 'success'
+            ? '¡Tu mensaje ha sido enviado exitosamente!'
+            : 'Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo.';
+        const color = status === 'success' ? 'green' : 'red';
+        document.body.innerHTML += `<p style="color: ${color}; text-align: center;">${message}</p>`;
+    }
+</script>
+
+</body>
+</html>
